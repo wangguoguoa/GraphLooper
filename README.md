@@ -16,13 +16,15 @@ Training data can be found at my paper data preparation . Cooler files may be fo
 ### Generate training data
 
 ```
+Preprocessing of epigenomic data
 python gener_eps_data.py
+Generate graph structure training samples
 python gener_graph_data.py
 ```
 ### Training model
  
 ```
 python train-HMTP.py -d ./training data/ -g 0 -b 128 -lr 0.001 -e 30 -w 0.0005 -c ./models
-
+```
 ### Question
 If you have any questions, please send an email to siguo_wang@163.com
