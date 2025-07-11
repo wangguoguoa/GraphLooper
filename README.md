@@ -17,7 +17,7 @@ Training data can be found at my paper data preparation . Cooler files may be fo
 
 ```
 python gener_eps_data.py
-python gener_eps_data.py
+python gener_graph_data.py
 ```
 ### Training model
  
