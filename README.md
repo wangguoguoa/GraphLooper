@@ -13,20 +13,16 @@ git clone https://github.com/tariks/peakachu
 ### Data preparation
 GraphLooper requires the contact map to be a .cool file or a .hic file and any training input to be a text file in bedpe format.   
 Training data can be found at my paper data preparation . Cooler files may be found at the 4DN data portal. 
-### Generate positive and negative samples
+### Generate training data
 
 ```
-python gendata.py -p file.cool -b training.bedpe -a accessible .bigWig -o ./data/
+python gener_eps_data.py
+python gener_eps_data.py
 ```
 ### Training model
  
 ```
-python train.py -d ./training data/ -g 0 -b 128 -lr 0.001 -e 30 -w 0.0005 -c ./models
-```
-### Score
+python train-HMTP.py -d ./training data/ -g 0 -b 128 -lr 0.001 -e 30 -w 0.0005 -c ./models
 
-```
-python score_chromosome.py -p file.cool -o ./scores -m ./model/chr.pth -a accessible.bigWig
-```
 ### Question
 If you have any questions, please send an email to siguo_wang@163.com
