@@ -1,0 +1,1 @@
+-d /media/sc3/5f1dd0a3-c977-419a-933a-f72c3910793b/sc4/wsgg/GraphLooper/processed_data/K562/sample -g 0 -b 128 -lr 0.001 -e 30 -w 0.0005 -c /media/sc3/5f1dd0a3-c977-419a-933a-f72c3910793b/sc4/wsgg/GraphLooper/models
