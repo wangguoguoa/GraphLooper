@@ -90,7 +90,7 @@ def main():
     args = get_args()
     args.num_classes = 2
     args.num_features = 20
-    random.seed(args.seed)
+    torch.manual_seed()
     if torch.cuda.is_available():
         args.device = torch.device("cuda:0")
         # print(torch.cuda.device_count())
